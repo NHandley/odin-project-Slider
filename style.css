@@ -1,0 +1,17 @@
+.slider {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1140px;
+	height: 720px;
+	overflow: hidden;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.slider img {
+	width: 1140px;
+	height: 720px;	
+	display: none;
+}
+
