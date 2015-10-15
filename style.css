@@ -17,6 +17,14 @@
 }
 
 p {
-	float: bottom;
+
 	text-align: center;
+}
+
+
+
+#logos {
+	float: left;
+	margin-left: 30px;
+
 }

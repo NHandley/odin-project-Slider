@@ -5,8 +5,8 @@
 
 	setInterval(function() {
 
-		$('.slider #'+ $count).show("slide", {direction: "right"}, 500);
-		$('.slider #'+ $count).delay(2500).hide("slide", {direction: "left"}, 500);
+		$('.slider #'+ $count).show("fade",  500);
+		$('.slider #'+ $count).delay(2500).hide("fade", 500);
 
 		if ($count == $sc) {
 			$count = 1;
