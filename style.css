@@ -22,9 +22,17 @@ p {
 }
 
 
-
 #logos {
 	float: left;
 	margin-left: 30px;
+	padding: 10px;
 
+}
+
+#twitter {
+	margin-left: 10px;
+}
+
+#git {
+	text-decoration: none;
 }
