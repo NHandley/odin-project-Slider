@@ -1,13 +1,30 @@
-$(document).ready(function() {
-	var $sc = $(".slider img").size();
-	var $count = 1;
+(function() {
+	var $sc = $(".slider img").size(); //Slider image size
+	var $count = 2;
 	$('.slider #1').show('fade', 500);
 
-	$('#next').click(function() {
+	setInterval(function() {
+
+		$('.slider #'+ $count).show("slide", {direction: "right"}, 500);
+		$('.slider #'+ $count).delay(2500).hide("slide", {direction: "left"}, 500);
+
+		if ($count == $sc) {
+			$count = 1;
+		}else{
+			$count += 1;
+		}
+
+	}, 3500)
+
+	/*Buttons don't work so smoothly with the slide animation*/
+
+	/*$('#next').click(function() {
 		
+		
+		$('.slider #'+ $count).show("slide", {direction: "right"}, 500);
 		$('.slider #'+ $count).hide("slide", {direction: "left"}, 500);
 		$count += 1;
-		$('.slider #'+ $count).show("slide", {direction: "right"}, 500);
+		
 		
 		
 		if($count == $sc) {
@@ -26,20 +43,6 @@ $(document).ready(function() {
 		$count = $sc + 1;
 		}
 
-	});
-	
+	});*/
 
-
-	/*setInterval(function(){
-
-		$('.slider#'+ $count).show("slide", {direction: "right"}, 500);
-		$('.slider#'+ $count).delay(5000).hide("slide", {direction: "left"}, 500);
-
-		if($count == $sc){
-			$count = 1;
-		}
-		else{
-			$count += 1;
-		}
-	}, 6500); */
-});
+})();

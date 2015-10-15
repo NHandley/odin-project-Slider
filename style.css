@@ -5,8 +5,9 @@
 	height: 720px;
 	overflow: hidden;
 	margin-top: 30px;
-	margin-left: auto;
-	margin-right: auto;
+	background-color: gray;
+	box-shadow: inset 0 0 1em blue, 0 0 1em blue;
+
 }
 
 .slider img {
@@ -15,3 +16,7 @@
 	display: none;
 }
 
+p {
+	float: bottom;
+	text-align: center;
+}
