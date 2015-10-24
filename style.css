@@ -1,8 +1,8 @@
 .slider {
 	margin-left: auto;
 	margin-right: auto;
-	width: 1140px;
-	height: 720px;
+	width: 940px;
+	height: 520px;
 	overflow: hidden;
 	margin-top: 30px;
 	background-color: gray;
@@ -10,37 +10,19 @@
 
 }
 
+button {
+	padding: 5px;
+}
+li {
+	list-style: none;
+}
+
 .slider img {
-	width: 1140px;
-	height: 720px;	
+	width: 940px;
+	height: 520px;	
 	display: none;
 }
 
 p {
-
 	text-align: center;
-}
-
-
-#logos {
-	float: left;
-	padding: 10px;
-
-}
-
-#twitter {
-	margin-left: 10px;
-}
-
-#git {
-	text-decoration: none;
-}
-
-.nav {
-	float: left;
-	background-color: #55acee;
-}
-
-.container {
-	
 }
