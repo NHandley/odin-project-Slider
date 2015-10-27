@@ -1,15 +1,19 @@
-.slider img {
+.slider {
 	width: 850px;
 	height: 500px;
 	overflow: hidden;
 	margin: 0 auto;
 	background-color: gray;
 	box-shadow: inset 0 0 1em black, 0 0 1em black;
-	position: absolute;
+	position: relative;
 }
 
-li {
+.slider li {
 	list-style: none;
+	width: 850px;
+	height: 500px;
+	left: 1px; /* why do I need to do this? */
+	position: absolute;
 }
 
 button {
@@ -20,5 +24,4 @@ button {
 
 p {
 	text-align: center;
-	float: bottom;
 }
