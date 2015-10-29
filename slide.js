@@ -1,7 +1,7 @@
 (function() {
 
 	$('button').click(function() {
-		$('#slide3').show();
+		$('#slide3').slideDown("slow");
 	});
 
 });
