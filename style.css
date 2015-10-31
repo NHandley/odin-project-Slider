@@ -8,12 +8,15 @@
 	position: relative;
 }
 
-.slider li {
-	list-style: none;
+.slider img {
 	width: 850px;
 	height: 500px;
-	left: 1px; /* why do I need to do this? */
+	right: 20px; /* why do I need to do this?, Not sure how to match image to parents width/height */
 	position: absolute;
+}
+
+.slider {
+	list-style: none;
 }
 
 button {
@@ -22,4 +25,8 @@ button {
 
 p {
 	text-align: center;
+}
+
+.active {
+	z-index: 10;
 }
