@@ -3,9 +3,7 @@
 	var count = 1;
 	var sliderLength = 4;
 
-	$('button').click(function() {
-
-		$("#slide"+count).removeClass("active");
+	$('button').click(function() {		
 
 		if(count > sliderLength)
 		{
@@ -13,8 +11,9 @@
 		}
 
 		$("#slide"+count).addClass("active");
-
+		
 			count++;
+
 	});
 
 })();
