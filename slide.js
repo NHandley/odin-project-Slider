@@ -1,7 +1,20 @@
 (function() {
 
+	var count = 1;
+	var sliderLength = 4;
+
 	$('button').click(function() {
-		$('#slide3').addClass("active");
+
+		$("#slide"+count).removeClass("active");
+
+		if(count > sliderLength)
+		{
+			count = 1;
+		}
+
+		$("#slide"+count).addClass("active");
+
+			count++;
 	});
 
-});
+})();
