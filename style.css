@@ -39,7 +39,3 @@ button {
 p {
 	text-align: center;
 }
-
-.active {
-	z-index: 10;
-}
