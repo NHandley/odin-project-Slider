@@ -13,7 +13,7 @@
 		}
 
 		//Not sure how to hide the last slide when count is reset and back to first image
-		$("#slide"+(count - 1)).hide("slide", { direction: "left" }, 1000);	
+		//$("#slide"+(count - 1)).hide("slide", { direction: "left" }, 1000);	
 		$("#slide"+count).show("slide", { direction: "right" }, 1000);
 			
 			console.log(count);
