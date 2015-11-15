@@ -5,7 +5,21 @@
 
 	$("#slide1").show("fade", 1000);
 
-	//Images stop sliding after count is reset
+	setInterval(function() {
+
+		if(count > sliderLength){
+		$("#slide"+(count - 1)).hide("slide", { direction: "left" }, 1000);
+		count = 1;
+		}
+
+		$("#slide"+(count - 1)).hide("slide", { direction: "left" }, 1000);	
+		$("#slide"+count).show("slide", { direction: "right" }, 1000);
+			
+		console.log(count);
+		count++;
+
+	}, 3000);
+
 	$('#next').click(function() {		
 		
 		if(count > sliderLength){
@@ -13,7 +27,6 @@
 			count = 1;
 		}
 
-		//Not sure how to hide the last slide when count is reset and back to first image
 		$("#slide"+(count - 1)).hide("slide", { direction: "left" }, 1000);	
 		$("#slide"+count).show("slide", { direction: "right" }, 1000);
 			
@@ -21,18 +34,18 @@
 			count++;
 	});
 
-		//Will fix once solved issues for next button
 		$('#prev').click(function() {		
 		
+		$("#slide"+count).hide("slide", { direction: "right" }, 1000);
+		count--;
 
 		if (count < 1) {
 			count = 4;
 		};
 
-		$("#slide"+(count + 1)).hide("slide", { direction: "right" }, 1000);
 		$("#slide"+count).show("slide", { direction: "left" }, 1000);
 		
-			count--;
+
 			console.log(count);
 
 	});
