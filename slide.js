@@ -5,10 +5,17 @@
 
 	$("#slide1").show("fade", 1000);
 
-	setInterval(function() {
+	//Forward timer
+	/*setInterval(function() {
 		$('#next').trigger("click");
 		
-	}, 3000);
+	}, 3000);*/
+
+	//Backwards timer
+	/*setInterval(function() {
+		$('#previous').trigger("click");
+		
+	}, 3000);*/
 
 	$('#next').click(function() {		
 		
